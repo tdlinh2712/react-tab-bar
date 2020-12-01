@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './style.css';
 
 const NavBar = ({ tabs, setSelectedTab, selectedTab }) => {
@@ -9,7 +9,7 @@ const NavBar = ({ tabs, setSelectedTab, selectedTab }) => {
                     className = "tab"
                     key = { tab.title } 
                     active = { index === selectedTab ? 1 : 0 } //to check if this tab is the currently selected tab => for different styling
-                    onClick = { () => setSelectedTab ( index ) }
+                    onClick = {() => setSelectedTab ( index )}
                 >
                     { tab.title } 
                 </button>
